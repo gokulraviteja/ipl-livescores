@@ -12,5 +12,7 @@ print("I am here")
 driver.get("https://www.cricbuzz.com/live-cricket-scores/30409/rcb-vs-dc-19th-match-indian-premier-league-2020")
 
 for i in range(5):
+	arr=driver.find_elements_by_tag_name("div")
+	print(len(arr))
 	print(driver.title)
-	time.sleep(5)
+	time.sleep(1)
